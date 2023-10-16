@@ -22,10 +22,10 @@ sudo systemctl restart httpd
 sudo yum install git -y
 
 #clone the ttms repository from GitHub
-git clone https://github.com/SUBBARAMIREDDY-K/ttms.git
+git clone https://github.com/SUBBARAMIREDDY-K/TimeTable-Mangement-System.git
 
 
 #move the files to the /var/www/html
-sudo mv ttms/* /var/www/html
+sudo mv TimeTable-Mangement-System/ttms/* /var/www/html
 
 
