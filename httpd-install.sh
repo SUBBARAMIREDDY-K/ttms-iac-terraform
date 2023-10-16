@@ -1,17 +1,18 @@
 #!/bin/bash
 
+sudo su
 # Update package lists
-sudo yum update -y
+yum update -y
 
 # Install Apache
-sudo yum install httpd -y
+yum install httpd -y
 
 # Install PHP
-sudo yum install php php-mysql -y
+yum install php php-mysql -y
 
-sudo systemctl enable httpd
+systemctl enable httpd
 # Start and enable Apache
-sudo systemctl start httpd
+systemctl start httpd
 
 
 # Restart Apache
@@ -23,8 +24,6 @@ sudo yum install git -y
 #clone the ttms repository from GitHub
 git clone https://github.com/SUBBARAMIREDDY-K/ttms.git
 
-#Change the permission
-sudo chmod 777 /var/www/html
 
 #move the files to the /var/www/html
 sudo mv ttms/* /var/www/html
